@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bug Tracker</title>
+  <!-- Latest compiled and minified CSS -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style1.css">
+</head>
+
+<body>
+<header>
+  <div class="logo">
+    <img src="./BugTrackerLogo.png" height="60px" width="60px">
+  </div>
+  <div class="backtologin" style="margin-left: 15px; font-size: larger;">
+    <a href="./index.html">Login</a>
+  </div>
+  <div class="about" style="margin-left: 15px; font-size: larger;">
+    <a href="#aboutUs">About Me</a>
+  </div>
+  <div class="contact" style="margin-left:15px; font-size:larger;">
+    <a href="#contact">Contact Me</a>
+  </div>
+  <div class="bugTracker" style="margin-left: 380px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+    <h1>Bug Tracker</h1>
+  </div>
+</header>
+  <div class="container">
+    <h1></h1>
+    
+    <div class="jumbotron">
+  
+      <form id="issueInputForm">
+        <div class="form-group">
+          <label for="issueDescription">Description</label>
+          <input type="text" class="form-control" id="issueDescription" placeholder="Describe the issue ...">
+        </div></br>
+        <div class="form-group">
+          <label for="issueSeverity">Severity</label>
+          <select id="issueSeverity" class="form-control">
+            <option value="Low">--Select--</option>
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+          </select>
+        </div></br>
+        <div class="form-group">
+          <label for="issueAssignedTo">Assigned To</label>
+          <input type="text" class="form-control" id="issueAssignedTo" placeholder="Responsible ...">
+        </div></br>
+        <div>
+          <form>
+          <label>Add images of the bug if any...</label>
+          <input type="file" id="fileInput" accept="image/jpeg" name="jpegFile"><br>
+          
+        </form>
+        </div></br>
+        <button id="add-issue" onclick="submitIssue()" class="btn btn-primary">Add</button>
+      </form>
+    </div>
+    <div class="col-lg-12">
+      <div id="issuesList">
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="emptyField" tabindex="-1" role="dialog" aria-labelledby="emptyFieldLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="emptyFieldLabel">Invalid Input!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Please provide the desciption of the issue and also the person name who you want to assign the issue.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <!-- Latest compiled and minified JavaScript -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+
+  <section id="aboutUs">
+    <h2 style="text-align: center;font-size: 50px;padding-top: 100px;">About Me</h2></br>
+    <p style="font-size: 25px;padding-left: 80px; padding-right: 80px;" >
+      I'm Anuj and I'm a dedicated and passionate Web Developer with a strong foundation in HTML, CSS, and JavaScript and expertise in modern frameworks like React and Node.js. My journey in the tech world extends beyond web development, as I am also an enthusiastic Machine Learning practitioner, eager to explore the intersection of AI and web technologies. My portfolio showcases a blend of creativity, problem-solving skills, and an ever-growing interest in cutting-edge technologies! <br>
+        I am always eager to learn new technologies and expand my horizons. I am looking for opportunities to apply my skills and gain valuable experience in the field of computer science. I am open to internships, part-time jobs, or freelance projects that challenge me and allow me to grow as a developer.
+        Top skills. </br></br></br></br>
+      <p style="font-size: large; margin-left: 80px; text-align: center; font-size: 30px;" > View my projects on
+      <a href="https://github.com/Hackeranuj">GitHub</a>
+      </p>
+    </p>
+    <!-- Add more content for the "ABOUT US" section as needed -->
+    </section></br>
+  
+    <section id="contact" style="font-size: larger;">
+   
+      <h2>Contact Me</h2></br></br></br>
+      <p style="margin-left: 20px; margin-right: 20px;text-align: center; font-size: 30px;" > Connect with me on 
+        <a href="https://www.linkedin.com/in/anuj-kumar-33205220b/">LinkedIn</a><br></p></br>
+        <p style="font-size: large; margin-left: 20px; margin-right: 20px;text-align: center; font-size: 30px;" >Reach out to me to
+        <a href="anujgahra244304@gmail.com">Mail</a></p></br></br></br></br></br></br></br></br></br></br></br></br></br></br></div>
+    </section>
+
+
+</body>
+
+</html> 

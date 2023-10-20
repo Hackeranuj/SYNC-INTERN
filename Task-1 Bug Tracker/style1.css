@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%);
+    
+}
+
+header {
+    background-color: #f0f0f0;
+    height: 80px;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+label{
+    font-size: larger;
+}
+
+section{
+
+    height: 100%;
+    margin:50px;
+    padding-top: 10px;
+}
+
+.jumbotron{
+    padding-top: 50px;
+    height: 14cm;
+    font-size: 15px;
+    
+}
+
+.container{
+    padding-top: 43px;
+    margin-left: 10%;
+    
+}
+
+
+/* .modal-content{
+     margin-left: 40%;
+} */
+
+#contact h2{
+    text-align: center;
+    font-size: 70px;
+    padding-top: 0px;
+}
+
+#contact{
+    animation: slideIn 2s forwards;
+  }
+  
+  /* Animation for sliding in the contact section content */
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+    }
+    50% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(1%);
+    }
+  }
+  

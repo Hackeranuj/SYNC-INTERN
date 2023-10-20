@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Train Ticketing System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Local Train Ticket System</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Book Your Ticket</h2>
+            <form id="ticketForm">
+                <label for="source">To:</label>
+                <input type="text" id="source" placeholder="Enter From/City " required>
+                <label for="destination">From:</label>
+                <input type="text" id="destination" placeholder="Enter Destination/City" required>
+                <label for="date">Date:</label>
+                <input type="date" id="date" required>
+                <button type="submit">Book Ticket</button>
+            </form>
+        </section>
+        <section>
+            <h2>Your Tickets</h2>
+            <div id="ticketList">
+                <!-- Ticket records will be dynamically added here -->
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
+

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Monitoring System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Attendance Monitoring System</h1>
+        <form id="studentForm">
+            <label for="studentId">Student ID:</label>
+            <input type="text" id="studentId" required>
+            <label for="studentName">Student Name:</label>
+            <input type="text" id="studentName" required>
+            <button type="submit">Register Student</button>
+        </form>
+        <div id="attendanceSection">
+            <h2>Attendance</h2>
+            <div id="attendanceList">
+                <!-- Attendance records will be dynamically added here -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

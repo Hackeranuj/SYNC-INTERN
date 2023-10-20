@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Election System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Online Election System</h1>
+        <h2>Voter Registration</h2>
+        <form id="voterForm">
+            <label for="voterId">Voter ID:</label>
+            <input type="text" id="voterId" required>
+            <label for="voterName">Voter Name:</label>
+            <input type="text" id="voterName" required>
+            <label for="voterPassword">Password:</label>
+            <input type="password" id="voterPassword" required>
+            <button type="submit">Register Voter</button>
+        </form>
+
+        <h2>Candidate Registration</h2>
+        <form id="candidateForm">
+            <label for="candidateId">Candidate ID:</label>
+            <input type="text" id="candidateId" required>
+            <label for="candidateName">Candidate Name:</label>
+            <input type="text" id="candidateName" required>
+            <button type="submit">Register Candidate</button>
+        </form>
+
+        <h2>Cast Vote</h2>
+        <form id="voteForm">
+            <label for="voterId">Voter ID:</label>
+            <input type="text" id="voterIdVote" required>
+            <label for="candidateId">Candidate ID:</label>
+            <input type="text" id="candidateIdVote" required>
+            <button type="submit">Cast Vote</button>
+        </form>
+
+        <h2>Election Results</h2>
+        <p id="winner">No winner yet</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

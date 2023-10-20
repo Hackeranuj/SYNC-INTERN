@@ -1,0 +1,71 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eee9d7;
+    /* Pastel yellow */
+}
+
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #928686;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    /* White */
+}
+
+h1,
+h2 {
+    text-align: center;
+    color: #02030a;
+    /* Dark blue */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+form label {
+    margin-bottom: 5px;
+    color: #030207;
+    /* Purple */
+}
+
+form input {
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #0c0a0a;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #ff6f00;
+    /* Orange */
+    color: #111010;
+    /* White */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#results {
+    text-align: center;
+    color: #1a237e;
+    /* Dark blue */
+    margin-top: 30px;
+}
+
+/* Indian Flag Colors */
+.container {
+    background-image: linear-gradient(to bottom, #ff9933, #ffffff, #138808);
+}
